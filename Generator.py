@@ -1,6 +1,7 @@
 # imports
 import string
 import secrets
+import sys
 
 # string module for letters,digits, punctuation
 def generate(len):
@@ -9,7 +10,7 @@ def generate(len):
     return print(secure_password)
 # define a password length
 def main():
-    len = int(input("Password length? "))
+    len = int(sys.argv[1])
     return generate(len)
 
 if __name__ == '__main__':
